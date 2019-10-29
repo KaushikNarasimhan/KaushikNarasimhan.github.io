@@ -24,7 +24,7 @@
 <meta name="author" content="Kaushik Narasimhan" />
 
 
-<meta name="date" content="2019-10-28" />
+<meta name="date" content="2019-10-29" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -50,6 +50,13 @@
 
 
 
+<script src="libs/htmlwidgets-1.5.1/htmlwidgets.js"></script>
+<script src="libs/plotly-binding-4.9.0/plotly.js"></script>
+<script src="libs/typedarray-0.1/typedarray.min.js"></script>
+<link href="libs/crosstalk-1.0.0/css/crosstalk.css" rel="stylesheet" />
+<script src="libs/crosstalk-1.0.0/js/crosstalk.min.js"></script>
+<link href="libs/plotly-htmlwidgets-css-1.46.1/plotly-htmlwidgets.css" rel="stylesheet" />
+<script src="libs/plotly-main-1.46.1/plotly-latest.min.js"></script>
 
 
 
@@ -71,14 +78,15 @@
 <li class="divider"></li>
 <li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Questions and Objectives</a></li>
 <li class="chapter" data-level="2" data-path="descriptive-statistics.html"><a href="descriptive-statistics.html"><i class="fa fa-check"></i><b>2</b> Descriptive Statistics</a><ul>
-<li class="chapter" data-level="2.1" data-path="descriptive-statistics.html"><a href="descriptive-statistics.html#species-breakdown"><i class="fa fa-check"></i><b>2.1</b> Species Breakdown</a></li>
-<li class="chapter" data-level="2.2" data-path="descriptive-statistics.html"><a href="descriptive-statistics.html#captures-by-forest-type"><i class="fa fa-check"></i><b>2.2</b> Captures by forest type</a></li>
-<li class="chapter" data-level="2.3" data-path="descriptive-statistics.html"><a href="descriptive-statistics.html#captures-and-species-by-site"><i class="fa fa-check"></i><b>2.3</b> Captures and Species by site</a></li>
-<li class="chapter" data-level="2.4" data-path="descriptive-statistics.html"><a href="descriptive-statistics.html#capture-by-time"><i class="fa fa-check"></i><b>2.4</b> Capture by time</a></li>
-<li class="chapter" data-level="2.5" data-path="descriptive-statistics.html"><a href="descriptive-statistics.html#species-accumulation-curves"><i class="fa fa-check"></i><b>2.5</b> Species Accumulation Curves</a></li>
-<li class="chapter" data-level="2.6" data-path="descriptive-statistics.html"><a href="descriptive-statistics.html#rarefaction-using-vegan"><i class="fa fa-check"></i><b>2.6</b> Rarefaction using Vegan</a></li>
-<li class="chapter" data-level="2.7" data-path="descriptive-statistics.html"><a href="descriptive-statistics.html#deriving-simpsons-diversity-index"><i class="fa fa-check"></i><b>2.7</b> Deriving Simpson’s Diversity Index</a></li>
-<li class="chapter" data-level="2.8" data-path="descriptive-statistics.html"><a href="descriptive-statistics.html#lets-make-a-whittaker-plot"><i class="fa fa-check"></i><b>2.8</b> Lets make a Whittaker plot</a></li>
+<li class="chapter" data-level="2.1" data-path="descriptive-statistics.html"><a href="descriptive-statistics.html#summary-table---a-work-in-progress"><i class="fa fa-check"></i><b>2.1</b> Summary Table - A work in progress</a></li>
+<li class="chapter" data-level="2.2" data-path="descriptive-statistics.html"><a href="descriptive-statistics.html#species-breakdown"><i class="fa fa-check"></i><b>2.2</b> Species Breakdown</a></li>
+<li class="chapter" data-level="2.3" data-path="descriptive-statistics.html"><a href="descriptive-statistics.html#captures-by-forest-type"><i class="fa fa-check"></i><b>2.3</b> Captures by forest type</a></li>
+<li class="chapter" data-level="2.4" data-path="descriptive-statistics.html"><a href="descriptive-statistics.html#captures-and-species-by-site"><i class="fa fa-check"></i><b>2.4</b> Captures and Species by site</a></li>
+<li class="chapter" data-level="2.5" data-path="descriptive-statistics.html"><a href="descriptive-statistics.html#capture-by-time"><i class="fa fa-check"></i><b>2.5</b> Capture by time</a></li>
+<li class="chapter" data-level="2.6" data-path="descriptive-statistics.html"><a href="descriptive-statistics.html#species-accumulation-curves"><i class="fa fa-check"></i><b>2.6</b> Species Accumulation Curves</a></li>
+<li class="chapter" data-level="2.7" data-path="descriptive-statistics.html"><a href="descriptive-statistics.html#rarefaction-using-vegan"><i class="fa fa-check"></i><b>2.7</b> Rarefaction using Vegan</a></li>
+<li class="chapter" data-level="2.8" data-path="descriptive-statistics.html"><a href="descriptive-statistics.html#deriving-simpsons-diversity-index"><i class="fa fa-check"></i><b>2.8</b> Deriving Simpson’s Diversity Index</a></li>
+<li class="chapter" data-level="2.9" data-path="descriptive-statistics.html"><a href="descriptive-statistics.html#lets-make-a-whittaker-plot"><i class="fa fa-check"></i><b>2.9</b> Lets make a Whittaker plot</a></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="chapter-1.html"><a href="chapter-1.html"><i class="fa fa-check"></i><b>3</b> Chapter 1</a><ul>
 <li class="chapter" data-level="3.1" data-path="chapter-1.html"><a href="chapter-1.html#hypothesis-1-there-is-no-difference-in-bat-species-diversity-abundance-richness-between-forest-types"><i class="fa fa-check"></i><b>3.1</b> Hypothesis 1: There is no difference in bat species diversity, abundance, richness between forest types</a><ul>
@@ -103,7 +111,7 @@
 </ul></li>
 <li class="chapter" data-level="4" data-path="chapter-2.html"><a href="chapter-2.html"><i class="fa fa-check"></i><b>4</b> Chapter 2</a><ul>
 <li class="chapter" data-level="4.1" data-path="chapter-2.html"><a href="chapter-2.html#hypothesis-4-no-difference-in-abundance-richness-and-diversity-by-height-as-a-result-of-forest-type"><i class="fa fa-check"></i><b>4.1</b> Hypothesis 4: No difference in abundance, richness, and diversity by height as a result of forest type</a><ul>
-<li class="chapter" data-level="4.1.1" data-path="chapter-2.html"><a href="chapter-2.html#abundance-richness-and-diversity-of-net-height-forest-type"><i class="fa fa-check"></i><b>4.1.1</b> Abundance, Richness and Diversity of net height ~ Forest Type</a></li>
+<li class="chapter" data-level="4.1.1" data-path="chapter-2.html"><a href="chapter-2.html#abundance-richness-of-net-height-forest-type"><i class="fa fa-check"></i><b>4.1.1</b> Abundance, Richness of net height ~ Forest Type</a></li>
 <li class="chapter" data-level="4.1.2" data-path="chapter-2.html"><a href="chapter-2.html#abundance-richness-of-net-height-merged-forest-types"><i class="fa fa-check"></i><b>4.1.2</b> Abundance, Richness of net height ~ Merged Forest types</a></li>
 </ul></li>
 <li class="chapter" data-level="4.2" data-path="chapter-2.html"><a href="chapter-2.html#hypothesis-5-no-difference-between-feeding-guilds-between-net-heights"><i class="fa fa-check"></i><b>4.2</b> Hypothesis 5: No difference between feeding guilds between net heights</a><ul>
@@ -139,9 +147,10 @@
 <h1><span class="header-section-number">4</span> Chapter 2</h1>
 <div id="hypothesis-4-no-difference-in-abundance-richness-and-diversity-by-height-as-a-result-of-forest-type" class="section level2">
 <h2><span class="header-section-number">4.1</span> Hypothesis 4: No difference in abundance, richness, and diversity by height as a result of forest type</h2>
-<div id="abundance-richness-and-diversity-of-net-height-forest-type" class="section level3">
-<h3><span class="header-section-number">4.1.1</span> Abundance, Richness and Diversity of net height ~ Forest Type</h3>
+<div id="abundance-richness-of-net-height-forest-type" class="section level3">
+<h3><span class="header-section-number">4.1.1</span> Abundance, Richness of net height ~ Forest Type</h3>
 <p>My nets were subdivided into three sections: Low, Medium and High</p>
+<p><img src="MSthesisBook_files/figure-html/h4%20plots-1.png" width="672" /></p>
 <div id="boxplots" class="section level4">
 <h4><span class="header-section-number">4.1.1.1</span> Boxplots</h4>
 <p><img src="MSthesisBook_files/figure-html/h4%20box-1.png" width="672" /></p>
@@ -184,9 +193,10 @@ Abundance for low violates assumption of normality. Richness for the high nets v
 <h2><span class="header-section-number">4.2</span> Hypothesis 5: No difference between feeding guilds between net heights</h2>
 <div id="fg-and-5-most-rep-feeding-guild-forest-type" class="section level3">
 <h3><span class="header-section-number">4.2.1</span> FG and 5 most rep feeding guild ~ Forest type</h3>
+<p><img src="MSthesisBook_files/figure-html/FG%20plots-1.png" width="672" /></p>
 <div id="boxplots-1" class="section level4">
 <h4><span class="header-section-number">4.2.1.1</span> Boxplots</h4>
-<p><img src="MSthesisBook_files/figure-html/fg%20net-1.png" width="672" /></p>
+<p><img src="MSthesisBook_files/figure-html/fg%20net-1.png" width="100%" /><img src="MSthesisBook_files/figure-html/fg%20net-2.png" width="100%" /><img src="MSthesisBook_files/figure-html/fg%20net-3.png" width="100%" /></p>
 </div>
 <div id="assumptions-2" class="section level4">
 <h4><span class="header-section-number">4.2.1.2</span> Assumptions</h4>
@@ -201,9 +211,10 @@ Abundance for low violates assumption of normality. Richness for the high nets v
 </div>
 <div id="of-feeding-guilds-and-5-most-represented-feeding-guilds-merged-forest-type" class="section level3">
 <h3><span class="header-section-number">4.2.2</span> # of Feeding Guilds and 5 most represented feeding guilds ~ Merged Forest type</h3>
+<p><img src="MSthesisBook_files/figure-html/FG%20net%20merge%20plots-1.png" width="672" /></p>
 <div id="boxplots-2" class="section level4">
 <h4><span class="header-section-number">4.2.2.1</span> Boxplots</h4>
-<p><img src="MSthesisBook_files/figure-html/fg%20net%20merge-1.png" width="672" /></p>
+<p><img src="MSthesisBook_files/figure-html/fg%20net%20merge-1.png" width="672" /><img src="MSthesisBook_files/figure-html/fg%20net%20merge-2.png" width="672" /><img src="MSthesisBook_files/figure-html/fg%20net%20merge-3.png" width="672" /></p>
 </div>
 <div id="assumptions-3" class="section level4">
 <h4><span class="header-section-number">4.2.2.2</span> Assumptions</h4>
@@ -222,11 +233,11 @@ Abundance for low violates assumption of normality. Richness for the high nets v
 <h3><span class="header-section-number">4.3.1</span> Common species by net height ~ Forest Type</h3>
 <div id="boxplots-3" class="section level4">
 <h4><span class="header-section-number">4.3.1.1</span> Boxplots</h4>
-<p><img src="MSthesisBook_files/figure-html/3%20species%20height%20box-1.png" width="672" /></p>
+<p><img src="MSthesisBook_files/figure-html/3%20species%20height%20box-1.png" width="100%" /></p>
 </div>
 <div id="assumptions-4" class="section level4">
 <h4><span class="header-section-number">4.3.1.2</span> Assumptions</h4>
-<p><img src="MSthesisBook_files/figure-html/3%20species%20height%20ass-1.png" width="1344" /></p>
+<p><img src="MSthesisBook_files/figure-html/3%20species-height-ass-1.png" width="672" /></p>
 <p><img src="MSthesisBook_files/figure-html/3%20species%20height%20table-1.png" width="672" /></p>
 </div>
 <div id="results-4" class="section level4">

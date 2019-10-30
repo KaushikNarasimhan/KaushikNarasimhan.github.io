@@ -80,7 +80,7 @@
 <li class="chapter" data-level="2" data-path="descriptive-statistics.html"><a href="descriptive-statistics.html"><i class="fa fa-check"></i><b>2</b> Descriptive Statistics</a><ul>
 <li class="chapter" data-level="2.1" data-path="descriptive-statistics.html"><a href="descriptive-statistics.html#summary-table---a-work-in-progress"><i class="fa fa-check"></i><b>2.1</b> Summary Table - A work in progress</a></li>
 <li class="chapter" data-level="2.2" data-path="descriptive-statistics.html"><a href="descriptive-statistics.html#species-breakdown"><i class="fa fa-check"></i><b>2.2</b> Species Breakdown</a></li>
-<li class="chapter" data-level="2.3" data-path="descriptive-statistics.html"><a href="descriptive-statistics.html#captures-by-forest-type"><i class="fa fa-check"></i><b>2.3</b> Captures by forest type</a></li>
+<li class="chapter" data-level="2.3" data-path="descriptive-statistics.html"><a href="descriptive-statistics.html#captures-and-richness-by-forest-type"><i class="fa fa-check"></i><b>2.3</b> Captures and Richness by forest type</a></li>
 <li class="chapter" data-level="2.4" data-path="descriptive-statistics.html"><a href="descriptive-statistics.html#captures-and-species-by-site"><i class="fa fa-check"></i><b>2.4</b> Captures and Species by site</a></li>
 <li class="chapter" data-level="2.5" data-path="descriptive-statistics.html"><a href="descriptive-statistics.html#capture-by-time"><i class="fa fa-check"></i><b>2.5</b> Capture by time</a></li>
 <li class="chapter" data-level="2.6" data-path="descriptive-statistics.html"><a href="descriptive-statistics.html#species-accumulation-curves"><i class="fa fa-check"></i><b>2.6</b> Species Accumulation Curves</a></li>
@@ -149,9 +149,11 @@
 <h2><span class="header-section-number">3.1</span> Hypothesis 1: There is no difference in bat species diversity, abundance, richness between forest types</h2>
 <div id="abundance-forest-type" class="section level3">
 <h3><span class="header-section-number">3.1.1</span> Abundance ~ Forest Type</h3>
-<p>Lets get boxplots of the forest types
-<img src="MSthesisBook_files/figure-html/boxplots%20of%20forest%20type-1.png" width="672" /></p>
-<p>There appear to be outliers here. Let’s see conduct an anova between abundance and forest type. But first lets test assumptions.</p>
+<div id="boxplots" class="section level4">
+<h4><span class="header-section-number">3.1.1.1</span> Boxplots</h4>
+<p><img src="MSthesisBook_files/figure-html/boxplots%20of%20forest%20type-1.png" width="672" /></p>
+<p>There appear to be outliers here. Let’s see conduct an anova between abundance and forest type.
+#### Assumptions.</p>
 <pre><code>## [1] 141.5</code></pre>
 <pre><code>## [1] 71.5</code></pre>
 <pre><code>## [1] 321.8</code></pre>
@@ -185,16 +187,21 @@
 ## data:  aov.abun.resid
 ## W = 0.98754, p-value = 0.9975</code></pre>
 <p>The p-value is not less than .05 for either, assuming homogeneity of variances and normality.</p>
+</div>
+<div id="results" class="section level4">
+<h4><span class="header-section-number">3.1.1.2</span> Results</h4>
 <p><img src="MSthesisBook_files/figure-html/abun%20and%20forest%20type-1.png" width="672" /><img src="MSthesisBook_files/figure-html/abun%20and%20forest%20type-2.png" width="672" /></p>
 <pre><code>##             Df Sum Sq Mean Sq F value Pr(&gt;F)
 ## Forest.Type  2  574.5   287.3   1.611   0.24
 ## Residuals   12 2139.2   178.3</code></pre>
 <p>Not significant (p= .24)</p>
 </div>
+</div>
 <div id="richness-forest-type." class="section level3">
 <h3><span class="header-section-number">3.1.2</span> Richness ~ Forest Type.</h3>
-<p>First a boxplot:
-<img src="MSthesisBook_files/figure-html/boxplot%20richness-1.png" width="672" /></p>
+<div id="boxplot" class="section level4">
+<h4><span class="header-section-number">3.1.2.1</span> Boxplot:</h4>
+<p><img src="MSthesisBook_files/figure-html/boxplot%20richness-1.png" width="672" /></p>
 <p>Now assumptions:</p>
 <pre><code>## [1] 13.2</code></pre>
 <pre><code>## [1] 24.8</code></pre>
@@ -234,6 +241,7 @@
 ## Forest.Type  2  32.93   16.47   1.069  0.374
 ## Residuals   12 184.80   15.40</code></pre>
 <p>Not significant (p-values=0.374)</p>
+</div>
 </div>
 <div id="diversity-forest-type" class="section level3">
 <h3><span class="header-section-number">3.1.3</span> Diversity ~ Forest Type</h3>
@@ -282,75 +290,30 @@
 <div id="abundance-richness-and-diversity-combined-forest-type" class="section level3">
 <h3><span class="header-section-number">3.1.4</span> Abundance, Richness and Diversity ~ Combined Forest Type</h3>
 <p>Given the similarities between CCR and PCR in the data so far, I will merge them into a new category, “MXD”, and rerun analyses for Abundance, Richness, and Diversity.</p>
-<p>First assumptions</p>
-<pre><code>## [1] 94.94444
-## [1] 321.8
-## [1] &quot;Abundance Levene test not significant, doesnt violate assumptions levene.Abundance&quot;
-## [1] &quot;Abundance  Shapiro Test is not significant, meets assumption of normality.&quot;</code></pre>
-<pre><code>## NULL
-## [1] 18.23333
-## [1] 8.2
-## [1] &quot;Richness Levene test not significant, doesnt violate assumptions levene.Richness&quot;
-## [1] &quot;Richness  Shapiro Test is not significant, meets assumption of normality.&quot;</code></pre>
-<pre><code>## NULL
-## [1] 0.003895248
-## [1] 0.002775702
-## [1] &quot;diversitysitessimp Levene test not significant, doesnt violate assumptions levene.diversitysitessimp&quot;
-## [1] &quot;diversitysitessimp  Shapiro Test is not significant, meets assumption of normality.&quot;</code></pre>
-<p><img src="MSthesisBook_files/figure-html/MXD-1.png" width="672" /></p>
-<pre><code>## NULL</code></pre>
+<p><img src="MSthesisBook_files/figure-html/h1%20merge%20bar%20chart-1.png" width="672" /></p>
+<div id="boxplots-1" class="section level4">
+<h4><span class="header-section-number">3.1.4.1</span> Boxplots</h4>
+<p><img src="MSthesisBook_files/figure-html/h1%20merge%20box-1.png" width="672" /></p>
+</div>
+<div id="assumptions" class="section level4">
+<h4><span class="header-section-number">3.1.4.2</span> Assumptions</h4>
+<p><img src="MSthesisBook_files/figure-html/h1_ass_merge-1.png" width="672" /></p>
+<p><img src="MSthesisBook_files/figure-html/h1%20merge%20table-1.png" width="672" /></p>
 <p>All three are parametric.</p>
-<pre><code>## 
-##  Two Sample t-test
-## 
-## data:  b1$Abundance by b1$FTmerged
-## t = -1.8634, df = 13, p-value = 0.08515
-## alternative hypothesis: true difference in means is not equal to 0
-## 95 percent confidence interval:
-##  -28.287844   2.087844
-## sample estimates:
-## mean in group MXD mean in group SLR 
-##              24.5              37.6</code></pre>
-<pre><code>##             Df Sum Sq Mean Sq F value Pr(&gt;F)  
-## b1$FTmerged  1    572   572.0   3.472 0.0852 .
-## Residuals   13   2142   164.7                 
-## ---
-## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
-<pre><code>## 
-##  Two Sample t-test
-## 
-## data:  b1$diversitysitessimp by b1$FTmerged
-## t = 0.70937, df = 13, p-value = 0.4906
-## alternative hypothesis: true difference in means is not equal to 0
-## 95 percent confidence interval:
-##  -0.04735741  0.09366232
-## sample estimates:
-## mean in group MXD mean in group SLR 
-##         0.8012207         0.7780683</code></pre>
-<pre><code>##             Df  Sum Sq  Mean Sq F value Pr(&gt;F)
-## b1$FTmerged  1 0.00179 0.001787   0.503  0.491
-## Residuals   13 0.04616 0.003551</code></pre>
-<pre><code>## 
-##  Two Sample t-test
-## 
-## data:  b1$Richness by b1$FTmerged
-## t = -1.1728, df = 13, p-value = 0.2619
-## alternative hypothesis: true difference in means is not equal to 0
-## 95 percent confidence interval:
-##  -7.105106  2.105106
-## sample estimates:
-## mean in group MXD mean in group SLR 
-##              10.3              12.8</code></pre>
-<pre><code>##             Df Sum Sq Mean Sq F value Pr(&gt;F)
-## b1$FTmerged  1  20.83   20.83   1.375  0.262
-## Residuals   13 196.90   15.15</code></pre>
-<p>Nothing is significant here, but Abundance is almost significant (p=.0852).</p>
+</div>
+<div id="results-1" class="section level4">
+<h4><span class="header-section-number">3.1.4.3</span> Results</h4>
+<p><img src="MSthesisBook_files/figure-html/h1%20merge%20sum-1.png" width="672" />
+Nothing is significant here, but Abundance is almost significant (p=.0852).</p>
+</div>
 </div>
 </div>
 <div id="hypothesis-2-there-is-no-difference-in-number-of-feeding-guilds-between-forest-type" class="section level2">
 <h2><span class="header-section-number">3.2</span> Hypothesis 2: There is no difference in number of feeding guilds between forest type</h2>
 <div id="feeding-guild-forest-type" class="section level3">
 <h3><span class="header-section-number">3.2.1</span> Feeding guild ~ Forest Type</h3>
+<div id="boxplot-1" class="section level4">
+<h4><span class="header-section-number">3.2.1.1</span> Boxplot</h4>
 <p><img src="MSthesisBook_files/figure-html/h2%20feeding%20guild-1.png" width="672" /></p>
 <p>Now assumptions:</p>
 <pre><code>## [1] 1.2</code></pre>
@@ -396,6 +359,7 @@
 Ok, feeding guild itself is not significant, but what if we look at individual feeding guilds?
 <img src="MSthesisBook_files/figure-html/bar%20chart%20of%20feeding%20guilds-1.png" width="672" /></p>
 <p>High flying frugivores and low flying frugivores are both strongly represented. Lets test each one against forest type.</p>
+</div>
 </div>
 <div id="high-flying-frugivores-forest-type" class="section level3">
 <h3><span class="header-section-number">3.2.2</span> High flying frugivores ~ Forest Type</h3>
@@ -515,25 +479,23 @@ Lets test assumptions:</p>
 <div id="feeding-guild-variables-combined-forest-type" class="section level3">
 <h3><span class="header-section-number">3.2.6</span> Feeding guild variables ~ Combined Forest Type</h3>
 <p>Given the similarities between CCR and PCR in the data so far, I will merge them into a new category, “MXD”, and rerun analyses for all of the previously ran feeding guild tests.</p>
+<div id="boxplots-2" class="section level4">
+<h4><span class="header-section-number">3.2.6.1</span> Boxplots</h4>
 <p><img src="MSthesisBook_files/figure-html/fg%20merge%20box-1.png" width="672" /></p>
-<p>Some differences seem to emerge. Now lets check assumptions:</p>
-<pre><code>## NULL</code></pre>
-<pre><code>## NULL</code></pre>
-<pre><code>## NULL</code></pre>
-<pre><code>## NULL</code></pre>
-<pre><code>## NULL</code></pre>
-<pre><code>## NULL</code></pre>
-<pre><code>## NULL</code></pre>
-<pre><code>## NULL</code></pre>
-<pre><code>## NULL</code></pre>
-<pre><code>## NULL</code></pre>
-<pre><code>## NULL</code></pre>
+<p>Some differences seem to emerge.</p>
+</div>
+<div id="assumptions-1" class="section level4">
+<h4><span class="header-section-number">3.2.6.2</span> Assumptions:</h4>
 <p><img src="MSthesisBook_files/figure-html/ft%20merge%20ass-1.png" width="1344" /></p>
 <p><img src="MSthesisBook_files/figure-html/ft%20merge%20table-1.png" width="672" /></p>
 <p>Feeding guild, OMG, ICG, OMP, OMG.Rich, ICG.RICH, OMP.RICH all violate assumptions of normality.
-I will use a Kruskal-wallis test for these:
-<img src="MSthesisBook_files/figure-html/ft%20merge%20sum-1.png" width="672" /></p>
+I will use a Kruskal-wallis test for these.</p>
+</div>
+<div id="results-2" class="section level4">
+<h4><span class="header-section-number">3.2.6.3</span> Results</h4>
+<p><img src="MSthesisBook_files/figure-html/ft%20merge%20sum-1.png" width="672" /></p>
 <p>THe number of species of OMG were significantly different between MXD and CCR!</p>
+</div>
 </div>
 </div>
 <div id="hypothesis-3-there-is-no-relationship-between-abundances-of-individual-species-and-forest-type" class="section level2">
@@ -547,13 +509,13 @@ I will use a Kruskal-wallis test for these:
 <div id="common-species-forest-type" class="section level3">
 <h3><span class="header-section-number">3.3.2</span> Common species ~ Forest Type</h3>
 <p><img src="MSthesisBook_files/figure-html/3%20species%20box-1.png" width="672" /></p>
-<div id="assumptions" class="section level4">
+<div id="assumptions-2" class="section level4">
 <h4><span class="header-section-number">3.3.2.1</span> Assumptions:</h4>
 <p><img src="MSthesisBook_files/figure-html/3spp%20ass-1.png" width="672" />
 <img src="MSthesisBook_files/figure-html/3spp%20table-1.png" width="672" /></p>
 <p>All three violate assumption of normality, so I will use a KW test.</p>
 </div>
-<div id="results" class="section level4">
+<div id="results-3" class="section level4">
 <h4><span class="header-section-number">3.3.2.2</span> Results</h4>
 <p><img src="MSthesisBook_files/figure-html/3spp%20summary-1.png" width="672" /></p>
 <p>Darn, nothing significant here either.</p>
@@ -563,18 +525,18 @@ I will use a Kruskal-wallis test for these:
 <h3><span class="header-section-number">3.3.3</span> Common species ~ Combined Forest Type</h3>
 <p>Given the similarities between CCR and PCR in the data so far, I will merge them into a new category, “MXD”, and rerun analyses for all of the previously ran feeding guild tests.</p>
 <p><img src="MSthesisBook_files/figure-html/CS%20bar%20chart-1.png" width="672" /></p>
-<div id="boxplot" class="section level4">
+<div id="boxplot-2" class="section level4">
 <h4><span class="header-section-number">3.3.3.1</span> Boxplot</h4>
 <p><img src="MSthesisBook_files/figure-html/CS%20merge%20box-1.png" width="672" /></p>
 <p>Some differences seem to emerge.</p>
 </div>
-<div id="assumptions-1" class="section level4">
+<div id="assumptions-3" class="section level4">
 <h4><span class="header-section-number">3.3.3.2</span> Assumptions:</h4>
 <p><img src="MSthesisBook_files/figure-html/CS%20merge%20ass-1.png" width="1344" /></p>
 <p><img src="MSthesisBook_files/figure-html/cs%20merge%20table-1.png" width="672" /></p>
 <p>Only A. lituratus violates normality of residuals, and all violate normality of samples.</p>
 </div>
-<div id="results-1" class="section level4">
+<div id="results-4" class="section level4">
 <h4><span class="header-section-number">3.3.3.3</span> Results</h4>
 <p><img src="MSthesisBook_files/figure-html/CS%20merge%20sum-1.png" width="672" /></p>
 <p>Nothing significant here.</p>

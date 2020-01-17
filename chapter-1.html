@@ -24,7 +24,7 @@
 <meta name="author" content="Kaushik Narasimhan" />
 
 
-<meta name="date" content="2019-12-18" />
+<meta name="date" content="2020-01-17" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -1871,25 +1871,25 @@ df.residual
 OMG
 </td>
 <td style="text-align:right;">
-0.2117133
+0.1153846
 </td>
 <td style="text-align:right;">
-0.0803321
+-0.0320513
 </td>
 <td style="text-align:right;">
-13.3516541
+0.875595
 </td>
 <td style="text-align:right;">
-1.6114435
+0.7826087
 </td>
 <td style="text-align:left;">
-<span style="     color: black !important;">0.24</span>
+<span style="     color: black !important;">0.48</span>
 </td>
 <td style="text-align:right;">
 3
 </td>
 <td style="text-align:right;">
-2139.20000
+9.2
 </td>
 <td style="text-align:right;">
 12
@@ -1900,25 +1900,25 @@ OMG
 ICG
 </td>
 <td style="text-align:right;">
-0.1512554
+0.1296296
 </td>
 <td style="text-align:right;">
-0.0097979
+-0.0154321
 </td>
 <td style="text-align:right;">
-3.9242834
+1.251666
 </td>
 <td style="text-align:right;">
-1.0692641
+0.8936170
 </td>
 <td style="text-align:left;">
-<span style="     color: black !important;">0.37</span>
+<span style="     color: black !important;">0.43</span>
 </td>
 <td style="text-align:right;">
 3
 </td>
 <td style="text-align:right;">
-184.80000
+18.8
 </td>
 <td style="text-align:right;">
 12
@@ -1929,28 +1929,352 @@ ICG
 OMP
 </td>
 <td style="text-align:right;">
-0.0372660
+0.3230769
 </td>
 <td style="text-align:right;">
--0.0367904
+0.2102564
 </td>
 <td style="text-align:right;">
-0.0595884
+1.211060
 </td>
 <td style="text-align:right;">
-0.5032108
+2.8636364
 </td>
 <td style="text-align:left;">
-<span style="     color: black !important;">0.49</span>
+<span style="     color: blue !important;">0.1</span>
 </td>
 <td style="text-align:right;">
-2
+3
 </td>
 <td style="text-align:right;">
-0.04616
+17.6
 </td>
 <td style="text-align:right;">
-13
+12
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<caption>
+(#tab:other feeding sum)GLM using Poisson
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;">
+Variable
+</th>
+<th style="text-align:left;">
+term
+</th>
+<th style="text-align:right;">
+estimate
+</th>
+<th style="text-align:right;">
+std.error
+</th>
+<th style="text-align:right;">
+statistic
+</th>
+<th style="text-align:left;">
+p.value
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+OMG
+</td>
+<td style="text-align:left;">
+(Intercept)
+</td>
+<td style="text-align:right;">
+0.0000000
+</td>
+<td style="text-align:right;">
+0.4472136
+</td>
+<td style="text-align:right;">
+0.000000
+</td>
+<td style="text-align:left;">
+<span style="     color: black !important;">1</span>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+OMG
+</td>
+<td style="text-align:left;">
+Forest.TypePCR
+</td>
+<td style="text-align:right;">
+-0.9162907
+</td>
+<td style="text-align:right;">
+0.8366538
+</td>
+<td style="text-align:right;">
+-1.095185
+</td>
+<td style="text-align:left;">
+<span style="     color: black !important;">0.27</span>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+OMG
+</td>
+<td style="text-align:left;">
+Forest.TypeSLR
+</td>
+<td style="text-align:right;">
+0.0000000
+</td>
+<td style="text-align:right;">
+0.6324531
+</td>
+<td style="text-align:right;">
+0.000000
+</td>
+<td style="text-align:left;">
+<span style="     color: black !important;">1</span>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+ICG
+</td>
+<td style="text-align:left;">
+(Intercept)
+</td>
+<td style="text-align:right;">
+0.0000000
+</td>
+<td style="text-align:right;">
+0.4472128
+</td>
+<td style="text-align:right;">
+0.000000
+</td>
+<td style="text-align:left;">
+<span style="     color: black !important;">1</span>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+ICG
+</td>
+<td style="text-align:left;">
+Forest.TypePCR
+</td>
+<td style="text-align:right;">
+0.1823216
+</td>
+<td style="text-align:right;">
+0.6055283
+</td>
+<td style="text-align:right;">
+0.301095
+</td>
+<td style="text-align:left;">
+<span style="     color: black !important;">0.76</span>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+ICG
+</td>
+<td style="text-align:left;">
+Forest.TypeSLR
+</td>
+<td style="text-align:right;">
+0.6931472
+</td>
+<td style="text-align:right;">
+0.5477219
+</td>
+<td style="text-align:right;">
+1.265509
+</td>
+<td style="text-align:left;">
+<span style="     color: black !important;">0.21</span>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+OMP
+</td>
+<td style="text-align:left;">
+(Intercept)
+</td>
+<td style="text-align:right;">
+0.6931472
+</td>
+<td style="text-align:right;">
+0.3162278
+</td>
+<td style="text-align:right;">
+2.191924
+</td>
+<td style="text-align:left;">
+<span style="     color: red !important;">0.03</span>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+OMP
+</td>
+<td style="text-align:left;">
+Forest.TypePCR
+</td>
+<td style="text-align:right;">
+-2.3025851
+</td>
+<td style="text-align:right;">
+1.0488088
+</td>
+<td style="text-align:right;">
+-2.195429
+</td>
+<td style="text-align:left;">
+<span style="     color: red !important;">0.03</span>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+OMP
+</td>
+<td style="text-align:left;">
+Forest.TypeSLR
+</td>
+<td style="text-align:right;">
+-0.9162907
+</td>
+<td style="text-align:right;">
+0.5916080
+</td>
+<td style="text-align:right;">
+-1.548814
+</td>
+<td style="text-align:left;">
+<span style="     color: black !important;">0.12</span>
+</td>
+</tr>
+</tbody>
+</table>
+<div style="border: 1px solid #ddd; padding: 5px; overflow-x: scroll; width:100%; ">
+<table class="table table-striped table-hover table-condensed table-responsive" style="margin-left: auto; margin-right: auto;">
+<caption>
+(#tab:other feeding sum)GLM using Poisson
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;">
+Variable
+</th>
+<th style="text-align:right;">
+null.deviance
+</th>
+<th style="text-align:right;">
+df.null
+</th>
+<th style="text-align:right;">
+logLik
+</th>
+<th style="text-align:right;">
+AIC
+</th>
+<th style="text-align:right;">
+BIC
+</th>
+<th style="text-align:right;">
+deviance
+</th>
+<th style="text-align:right;">
+df.residual
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+OMG
+</td>
+<td style="text-align:right;">
+14.71971
+</td>
+<td style="text-align:right;">
+14
+</td>
+<td style="text-align:right;">
+-16.31749
+</td>
+<td style="text-align:right;">
+38.63498
+</td>
+<td style="text-align:right;">
+40.75913
+</td>
+<td style="text-align:right;">
+13.02943
+</td>
+<td style="text-align:right;">
+12
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+ICG
+</td>
+<td style="text-align:right;">
+18.45963
+</td>
+<td style="text-align:right;">
+14
+</td>
+<td style="text-align:right;">
+-21.81561
+</td>
+<td style="text-align:right;">
+49.63123
+</td>
+<td style="text-align:right;">
+51.75538
+</td>
+<td style="text-align:right;">
+16.54067
+</td>
+<td style="text-align:right;">
+12
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+OMP
+</td>
+<td style="text-align:right;">
+27.04629
+</td>
+<td style="text-align:right;">
+14
+</td>
+<td style="text-align:right;">
+-18.02526
+</td>
+<td style="text-align:right;">
+42.05052
+</td>
+<td style="text-align:right;">
+44.17467
+</td>
+<td style="text-align:right;">
+18.18737
+</td>
+<td style="text-align:right;">
+12
 </td>
 </tr>
 </tbody>

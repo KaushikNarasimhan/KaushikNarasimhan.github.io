@@ -1,4 +1,4 @@
-Fri Jul 17 13:37:35 CDT 2020
+Fri Jul 17 15:42:37 CDT 2020
 MaxEnt version 3.4.1
 Checking header of /Users/Kaushiknarasimhan/Dropbox/Phd-MacBook Pro/Weasal paper/Environmental layers/ECU_COL/BioFinal_1.asc
 Checking header of /Users/Kaushiknarasimhan/Dropbox/Phd-MacBook Pro/Weasal paper/Environmental layers/ECU_COL/BioFinal_12.asc
@@ -10,19 +10,14 @@ Checking header of /Users/Kaushiknarasimhan/Dropbox/Phd-MacBook Pro/Weasal paper
 Checking header of /Users/Kaushiknarasimhan/Dropbox/Phd-MacBook Pro/Weasal paper/Environmental layers/ECU_COL/DEMFINAL.asc
 Checking header of /Users/Kaushiknarasimhan/Dropbox/Phd-MacBook Pro/Weasal paper/Environmental layers/ECU_COL/ForCoverNULL.asc
 Reading samples from BGC_maxentECU_COL.csv
-Read samples: max memory 3817865216, total allocated 257425408, free 214124016, used 43301392, increment 43301392
-Converting file /Users/Kaushiknarasimhan/Dropbox/Phd-MacBook Pro/Weasal paper/Environmental layers/ECU_COL/ForCoverNULL.asc size 14841150, max memory = 3817865216
-Reading file ForCoverNULL.asc
-FLOAT, 1630206 pixels with data
-readGrid: max memory 3817865216, total allocated 477102080, free 403068192, used 74033888, increment 30732496
-Writing file /Users/Kaushiknarasimhan/Dropbox/Phd-MacBook Pro/Weasal paper/Environmental layers/ECU_COL/maxent.cache/ForCoverNULL.mxe
-Extractor: max memory 3817865216, total allocated 477102080, free 363089416, used 114012664, increment 39978776
+Read samples: max memory 3817865216, total allocated 257425408, free 215982160, used 41443248, increment 41443248
+Extractor: max memory 3817865216, total allocated 257425408, free 214083824, used 43341584, increment 1898336
 Extracting random background and sample data
-Time since start: 2.28
+Time since start: 1.428
 1619059 points with values for all grids
 Adding samples to background in feature space
 Command line used: 
-Command line to repeat: java density.MaxEnt nowarnings noprefixes responsecurves jackknife "outputdirectory=/Users/Kaushiknarasimhan/Dropbox/Phd-MacBook Pro/Weasal paper/Environmental layers/ECU_COL/NR maxent NULL" "samplesfile=/Users/Kaushiknarasimhan/Dropbox/Phd-MacBook Pro/Weasal paper/Environmental layers/ECU_COL/BGC_maxentECU_COL.csv" "environmentallayers=/Users/Kaushiknarasimhan/Dropbox/Phd-MacBook Pro/Weasal paper/Environmental layers/ECU_COL" writeplotdata appendtoresultsfile -N ForCover2000 -N ForCoverFINAL -t ForCoverNULL
+Command line to repeat: java density.MaxEnt nowarnings noprefixes responsecurves jackknife "outputdirectory=/Users/Kaushiknarasimhan/Dropbox/Phd-MacBook Pro/Weasal paper/Environmental layers/ECU_COL/NR maxent NULL" "samplesfile=/Users/Kaushiknarasimhan/Dropbox/Phd-MacBook Pro/Weasal paper/Environmental layers/ECU_COL/BGC_maxentECU_COL.csv" "environmentallayers=/Users/Kaushiknarasimhan/Dropbox/Phd-MacBook Pro/Weasal paper/Environmental layers/ECU_COL" randomtestpoints=25 writebackgroundpredictions writeplotdata appendtoresultsfile -N ForCover2000 -N ForCoverFINAL -t ForCoverNULL
 Species: Neomorphus_radiolosus
 Layers: BioFinal_1 BioFinal_12 BioFinal_13 BioFinal_14 BioFinal_15 BioFinal_4 BioFinal_6 DEMFINAL ForCoverNULL
 Layertypes: Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Categorical
@@ -31,410 +26,432 @@ jackknife: true
 outputdirectory: /Users/Kaushiknarasimhan/Dropbox/Phd-MacBook Pro/Weasal paper/Environmental layers/ECU_COL/NR maxent NULL
 samplesfile: /Users/Kaushiknarasimhan/Dropbox/Phd-MacBook Pro/Weasal paper/Environmental layers/ECU_COL/BGC_maxentECU_COL.csv
 environmentallayers: /Users/Kaushiknarasimhan/Dropbox/Phd-MacBook Pro/Weasal paper/Environmental layers/ECU_COL
+randomtestpoints: 25
+writebackgroundpredictions: true
 writeplotdata: true
 appendtoresultsfile: true
 
-getSamples: max memory 3817865216, total allocated 477102080, free 322547704, used 154554376, increment 40541712
+getSamples: max memory 3817865216, total allocated 257425408, free 171147152, used 86278256, increment 42936672
 Making features
-makeFeatures: max memory 3817865216, total allocated 477102080, free 311068784, used 166033296, increment 11478920
+makeFeatures: max memory 3817865216, total allocated 257425408, free 221911304, used 35514104, increment -50764152
 Neomorphus_radiolosus: 
-Regularization values: linear/quadratic/product: 0.179, categorical: 0.250, threshold: 1.450, hinge: 0.500
-55 samples
-Density: max memory 3817865216, total allocated 477102080, free 285492424, used 191609656, increment 25576360
-linearPredictor: max memory 3817865216, total allocated 477102080, free 285492424, used 191609656, increment 0
+Regularization values: linear/quadratic/product: 0.216, categorical: 0.250, threshold: 1.580, hinge: 0.500
+42 samples
+Density: max memory 3817865216, total allocated 257425408, free 198270240, used 59155168, increment 23641064
+linearPredictor: max memory 3817865216, total allocated 257425408, free 198189888, used 59235520, increment 80352
 Deactivating (ForCoverNULL=6.0)
-FeaturedSpace: max memory 3817865216, total allocated 477102080, free 285492424, used 191609656, increment 0
-Sequential: max memory 3817865216, total allocated 477102080, free 285492424, used 191609656, increment 0
-Initial loss: 9.215825302206753
-Time since start: 18.127
-500: time = 15.527000 loss = 6.246330
-Resulting gain: 2.969495106682495
+FeaturedSpace: max memory 3817865216, total allocated 257425408, free 198189888, used 59235520, increment 0
+Sequential: max memory 3817865216, total allocated 257425408, free 197870704, used 59554704, increment 319184
+Initial loss: 9.21453157659465
+Initial test loss: 9.21453157659465
+Time since start: 16.425
+500: time = 14.639000 loss = 6.280230 testLoss 6.055031
+Resulting gain: 2.9343018265478333
 Projecting...
 Writing file /Users/Kaushiknarasimhan/Dropbox/Phd-MacBook Pro/Weasal paper/Environmental layers/ECU_COL/NR maxent NULL/Neomorphus_radiolosus.asc
-Time since start: 25.149
+Time since start: 23.688
 Writing /Users/Kaushiknarasimhan/Dropbox/Phd-MacBook Pro/Weasal paper/Environmental layers/ECU_COL/NR maxent NULL/plots/Neomorphus_radiolosus.png
-Time since start: 26.615
+Time since start: 25.333
 Neomorphus_radiolosus response curves
 Response curve: only BioFinal_1
 Making features
-makeFeatures: max memory 3817865216, total allocated 1394081792, free 538338408, used 855743384, increment 664133728
+makeFeatures: max memory 3817865216, total allocated 686817280, free 335836504, used 350980776, increment 291426072
 Neomorphus_radiolosus BioFinal_1: 
-Regularization values: linear/quadratic/product: 0.179, categorical: 0.250, threshold: 1.450, hinge: 0.500
-55 samples
-Density: max memory 3817865216, total allocated 1394081792, free 536425792, used 857656000, increment 1912616
-linearPredictor: max memory 3817865216, total allocated 1394081792, free 536425792, used 857656000, increment 0
-FeaturedSpace: max memory 3817865216, total allocated 1394081792, free 536425792, used 857656000, increment 0
-Sequential: max memory 3817865216, total allocated 1394081792, free 536425792, used 857656000, increment 0
-Initial loss: 9.215825302206753
-Time since start: 29.551
-440: time = 2.266000 loss = 7.930584
-Resulting gain: 1.2852417583870164
+Regularization values: linear/quadratic/product: 0.216, categorical: 0.250, threshold: 1.580, hinge: 0.500
+42 samples
+Density: max memory 3817865216, total allocated 686817280, free 335836504, used 350980776, increment 0
+linearPredictor: max memory 3817865216, total allocated 686817280, free 335836504, used 350980776, increment 0
+FeaturedSpace: max memory 3817865216, total allocated 686817280, free 335836504, used 350980776, increment 0
+Sequential: max memory 3817865216, total allocated 686817280, free 335836504, used 350980776, increment 0
+Initial loss: 9.21453157659465
+Time since start: 27.653
+300: time = 1.626000 loss = 7.910373
+Resulting gain: 1.3041585753798435
 Neomorphus_radiolosus response curves
 Response curve: only BioFinal_12
 Making features
-makeFeatures: max memory 3817865216, total allocated 1324875776, free 735435152, used 589440624, increment -268215376
+makeFeatures: max memory 3817865216, total allocated 835190784, free 356266808, used 478923976, increment 127943200
 Neomorphus_radiolosus BioFinal_12: 
-Regularization values: linear/quadratic/product: 0.179, categorical: 0.250, threshold: 1.450, hinge: 0.500
-55 samples
-Density: max memory 3817865216, total allocated 1324875776, free 735435152, used 589440624, increment 0
-linearPredictor: max memory 3817865216, total allocated 1324875776, free 735435152, used 589440624, increment 0
-FeaturedSpace: max memory 3817865216, total allocated 1324875776, free 735435152, used 589440624, increment 0
-Sequential: max memory 3817865216, total allocated 1324875776, free 735435152, used 589440624, increment 0
-Initial loss: 9.215825302206753
-Time since start: 32.441
-440: time = 2.795000 loss = 7.971300
-Resulting gain: 1.244525411463301
+Regularization values: linear/quadratic/product: 0.216, categorical: 0.250, threshold: 1.580, hinge: 0.500
+42 samples
+Density: max memory 3817865216, total allocated 835190784, free 344549400, used 490641384, increment 11717408
+linearPredictor: max memory 3817865216, total allocated 835190784, free 344549400, used 490641384, increment 0
+FeaturedSpace: max memory 3817865216, total allocated 835190784, free 344549400, used 490641384, increment 0
+Sequential: max memory 3817865216, total allocated 835190784, free 344549400, used 490641384, increment 0
+Initial loss: 9.21453157659465
+Time since start: 30.367
+420: time = 2.613000 loss = 8.066081
+Resulting gain: 1.1484503444025407
 Neomorphus_radiolosus response curves
 Response curve: only BioFinal_13
 Making features
-makeFeatures: max memory 3817865216, total allocated 1270874112, free 829163560, used 441710552, increment -147730072
+makeFeatures: max memory 3817865216, total allocated 933756928, free 154538584, used 779218344, increment 288576960
 Neomorphus_radiolosus BioFinal_13: 
-Regularization values: linear/quadratic/product: 0.179, categorical: 0.250, threshold: 1.450, hinge: 0.500
-55 samples
-Density: max memory 3817865216, total allocated 1270874112, free 829163560, used 441710552, increment 0
-linearPredictor: max memory 3817865216, total allocated 1270874112, free 829163560, used 441710552, increment 0
-FeaturedSpace: max memory 3817865216, total allocated 1270874112, free 829163560, used 441710552, increment 0
-Sequential: max memory 3817865216, total allocated 1270874112, free 829163560, used 441710552, increment 0
-Initial loss: 9.215825302206753
-60: time = 0.425000 loss = 8.945343
-Resulting gain: 0.27048228077672576
+Regularization values: linear/quadratic/product: 0.216, categorical: 0.250, threshold: 1.580, hinge: 0.500
+42 samples
+Density: max memory 3817865216, total allocated 933756928, free 154538584, used 779218344, increment 0
+linearPredictor: max memory 3817865216, total allocated 933756928, free 154538584, used 779218344, increment 0
+FeaturedSpace: max memory 3817865216, total allocated 933756928, free 154538584, used 779218344, increment 0
+Sequential: max memory 3817865216, total allocated 933756928, free 154538584, used 779218344, increment 0
+Initial loss: 9.21453157659465
+140: time = 0.858000 loss = 8.962425
+Resulting gain: 0.252106600900742
 Neomorphus_radiolosus response curves
+Time since start: 31.368
 Response curve: only BioFinal_14
 Making features
-makeFeatures: max memory 3817865216, total allocated 1270874112, free 692397992, used 578476120, increment 136765568
+makeFeatures: max memory 3817865216, total allocated 1004535808, free 632427456, used 372108352, increment -407109992
 Neomorphus_radiolosus BioFinal_14: 
-Regularization values: linear/quadratic/product: 0.179, categorical: 0.250, threshold: 1.450, hinge: 0.500
-55 samples
-Density: max memory 3817865216, total allocated 1270874112, free 692397992, used 578476120, increment 0
-linearPredictor: max memory 3817865216, total allocated 1270874112, free 692397992, used 578476120, increment 0
-FeaturedSpace: max memory 3817865216, total allocated 1270874112, free 692397992, used 578476120, increment 0
-Sequential: max memory 3817865216, total allocated 1270874112, free 692397992, used 578476120, increment 0
-Initial loss: 9.215825302206753
-Time since start: 33.991
-160: time = 0.942000 loss = 8.879842
-Resulting gain: 0.33598344364922283
+Regularization values: linear/quadratic/product: 0.216, categorical: 0.250, threshold: 1.580, hinge: 0.500
+42 samples
+Density: max memory 3817865216, total allocated 1004535808, free 632284400, used 372251408, increment 143056
+linearPredictor: max memory 3817865216, total allocated 1004535808, free 632284400, used 372251408, increment 0
+FeaturedSpace: max memory 3817865216, total allocated 1004535808, free 632284400, used 372251408, increment 0
+Sequential: max memory 3817865216, total allocated 1004535808, free 632284400, used 372251408, increment 0
+Initial loss: 9.21453157659465
+Time since start: 32.445
+180: time = 1.038000 loss = 8.874739
+Resulting gain: 0.3397925501761705
 Neomorphus_radiolosus response curves
 Response curve: only BioFinal_15
 Making features
-makeFeatures: max memory 3817865216, total allocated 1270874112, free 317130704, used 953743408, increment 375267288
+makeFeatures: max memory 3817865216, total allocated 1004535808, free 209684240, used 794851568, increment 422600160
 Neomorphus_radiolosus BioFinal_15: 
-Regularization values: linear/quadratic/product: 0.179, categorical: 0.250, threshold: 1.450, hinge: 0.500
-55 samples
-Density: max memory 3817865216, total allocated 1270874112, free 317130704, used 953743408, increment 0
-linearPredictor: max memory 3817865216, total allocated 1270874112, free 317130704, used 953743408, increment 0
-FeaturedSpace: max memory 3817865216, total allocated 1270874112, free 317130704, used 953743408, increment 0
-Sequential: max memory 3817865216, total allocated 1270874112, free 317130704, used 953743408, increment 0
-Initial loss: 9.215825302206753
-Time since start: 35.384
-360: time = 1.311000 loss = 7.848999
-Resulting gain: 1.3668267154563436
+Regularization values: linear/quadratic/product: 0.216, categorical: 0.250, threshold: 1.580, hinge: 0.500
+42 samples
+Density: max memory 3817865216, total allocated 1004535808, free 209684240, used 794851568, increment 0
+linearPredictor: max memory 3817865216, total allocated 1004535808, free 209684240, used 794851568, increment 0
+FeaturedSpace: max memory 3817865216, total allocated 1004535808, free 209684240, used 794851568, increment 0
+Sequential: max memory 3817865216, total allocated 1004535808, free 209684240, used 794851568, increment 0
+Initial loss: 9.21453157659465
+Time since start: 33.625
+300: time = 1.089000 loss = 7.849462
+Resulting gain: 1.3650695248137197
 Neomorphus_radiolosus response curves
 Response curve: only BioFinal_4
 Making features
-makeFeatures: max memory 3817865216, total allocated 1220018176, free 945423304, used 274594872, increment -679148536
+makeFeatures: max memory 3817865216, total allocated 959971328, free 642783368, used 317187960, increment -477663608
 Neomorphus_radiolosus BioFinal_4: 
-Regularization values: linear/quadratic/product: 0.179, categorical: 0.250, threshold: 1.450, hinge: 0.500
-55 samples
-Density: max memory 3817865216, total allocated 1220018176, free 945423304, used 274594872, increment 0
-linearPredictor: max memory 3817865216, total allocated 1220018176, free 945423304, used 274594872, increment 0
-FeaturedSpace: max memory 3817865216, total allocated 1220018176, free 945423304, used 274594872, increment 0
-Sequential: max memory 3817865216, total allocated 1220018176, free 945423304, used 274594872, increment 0
-Initial loss: 9.215825302206753
-Time since start: 36.394
-140: time = 0.938000 loss = 8.954859
-Resulting gain: 0.2609667079613782
+Regularization values: linear/quadratic/product: 0.216, categorical: 0.250, threshold: 1.580, hinge: 0.500
+42 samples
+Density: max memory 3817865216, total allocated 959971328, free 642783368, used 317187960, increment 0
+linearPredictor: max memory 3817865216, total allocated 959971328, free 642783368, used 317187960, increment 0
+FeaturedSpace: max memory 3817865216, total allocated 959971328, free 642783368, used 317187960, increment 0
+Sequential: max memory 3817865216, total allocated 959971328, free 642783368, used 317187960, increment 0
+Initial loss: 9.21453157659465
+Time since start: 34.631
+160: time = 0.912000 loss = 9.002765
+Resulting gain: 0.21176703179766854
 Neomorphus_radiolosus response curves
 Response curve: only BioFinal_6
 Making features
-makeFeatures: max memory 3817865216, total allocated 1220018176, free 624947208, used 595070968, increment 320476096
+makeFeatures: max memory 3817865216, total allocated 959971328, free 295451784, used 664519544, increment 347331584
 Neomorphus_radiolosus BioFinal_6: 
-Regularization values: linear/quadratic/product: 0.179, categorical: 0.250, threshold: 1.450, hinge: 0.500
-55 samples
-Density: max memory 3817865216, total allocated 1220018176, free 624947208, used 595070968, increment 0
-linearPredictor: max memory 3817865216, total allocated 1220018176, free 624947208, used 595070968, increment 0
-FeaturedSpace: max memory 3817865216, total allocated 1220018176, free 624947208, used 595070968, increment 0
-Sequential: max memory 3817865216, total allocated 1220018176, free 624947208, used 595070968, increment 0
-Initial loss: 9.215825302206753
-Time since start: 38.209
-260: time = 1.723000 loss = 8.808428
-Resulting gain: 0.4073971767339355
+Regularization values: linear/quadratic/product: 0.216, categorical: 0.250, threshold: 1.580, hinge: 0.500
+42 samples
+Density: max memory 3817865216, total allocated 959971328, free 295451784, used 664519544, increment 0
+linearPredictor: max memory 3817865216, total allocated 959971328, free 295451784, used 664519544, increment 0
+FeaturedSpace: max memory 3817865216, total allocated 959971328, free 295451784, used 664519544, increment 0
+Sequential: max memory 3817865216, total allocated 959971328, free 295451784, used 664519544, increment 0
+Initial loss: 9.21453157659465
+Time since start: 36.338
+280: time = 1.622000 loss = 8.876191
+Resulting gain: 0.3383408443460052
 Neomorphus_radiolosus response curves
 Response curve: only DEMFINAL
 Making features
-makeFeatures: max memory 3817865216, total allocated 1171783680, free 986781272, used 185002408, increment -410068560
+makeFeatures: max memory 3817865216, total allocated 921174016, free 374859880, used 546314136, increment -118205408
 Neomorphus_radiolosus DEMFINAL: 
-Regularization values: linear/quadratic/product: 0.179, categorical: 0.250, threshold: 1.450, hinge: 0.500
-55 samples
-Density: max memory 3817865216, total allocated 1171783680, free 986638216, used 185145464, increment 143056
-linearPredictor: max memory 3817865216, total allocated 1171783680, free 986638216, used 185145464, increment 0
-FeaturedSpace: max memory 3817865216, total allocated 1171783680, free 986638216, used 185145464, increment 0
-Sequential: max memory 3817865216, total allocated 1171783680, free 986638216, used 185145464, increment 0
-Initial loss: 9.215825302206753
-260: time = 0.801000 loss = 8.229456
-Resulting gain: 0.9863690397598681
+Regularization values: linear/quadratic/product: 0.216, categorical: 0.250, threshold: 1.580, hinge: 0.500
+42 samples
+Density: max memory 3817865216, total allocated 921174016, free 374859880, used 546314136, increment 0
+linearPredictor: max memory 3817865216, total allocated 921174016, free 374859880, used 546314136, increment 0
+FeaturedSpace: max memory 3817865216, total allocated 921174016, free 374859880, used 546314136, increment 0
+Sequential: max memory 3817865216, total allocated 921174016, free 374859880, used 546314136, increment 0
+Initial loss: 9.21453157659465
+260: time = 0.707000 loss = 8.066448
+Resulting gain: 1.1480835045479623
 Neomorphus_radiolosus response curves
 Response curve: only ForCoverNULL
 Making features
-makeFeatures: max memory 3817865216, total allocated 1171783680, free 838377600, used 333406080, increment 148260616
+makeFeatures: max memory 3817865216, total allocated 921174016, free 218704624, used 702469392, increment 156155256
 Neomorphus_radiolosus ForCoverNULL: 
-Regularization values: linear/quadratic/product: 0.179, categorical: 0.250, threshold: 1.450, hinge: 0.500
-55 samples
-Density: max memory 3817865216, total allocated 1171783680, free 838377600, used 333406080, increment 0
-linearPredictor: max memory 3817865216, total allocated 1171783680, free 838377600, used 333406080, increment 0
+Regularization values: linear/quadratic/product: 0.216, categorical: 0.250, threshold: 1.580, hinge: 0.500
+42 samples
+Density: max memory 3817865216, total allocated 921174016, free 218704624, used 702469392, increment 0
+linearPredictor: max memory 3817865216, total allocated 921174016, free 218704624, used 702469392, increment 0
 Deactivating (ForCoverNULL=6.0)
-FeaturedSpace: max memory 3817865216, total allocated 1171783680, free 838377600, used 333406080, increment 0
-Sequential: max memory 3817865216, total allocated 1171783680, free 838377600, used 333406080, increment 0
-Initial loss: 9.215825302206753
-20: time = 0.001000 loss = 9.215825
+FeaturedSpace: max memory 3817865216, total allocated 921174016, free 218704624, used 702469392, increment 0
+Sequential: max memory 3817865216, total allocated 921174016, free 218704624, used 702469392, increment 0
+Initial loss: 9.21453157659465
+20: time = 0.001000 loss = 9.214532
 Resulting gain: 0.0
 Neomorphus_radiolosus response curves
-Time since start: 39.793
+Time since start: 37.771
 Jackknife: leave BioFinal_1 out
 Making features
-makeFeatures: max memory 3817865216, total allocated 1171783680, free 780201864, used 391581816, increment 58175736
+makeFeatures: max memory 3817865216, total allocated 921174016, free 160436472, used 760737544, increment 58268152
 Neomorphus_radiolosus BioFinal_1: 
-Regularization values: linear/quadratic/product: 0.179, categorical: 0.250, threshold: 1.450, hinge: 0.500
-55 samples
-Density: max memory 3817865216, total allocated 1171783680, free 779100880, used 392682800, increment 1100984
-linearPredictor: max memory 3817865216, total allocated 1171783680, free 779100880, used 392682800, increment 0
+Regularization values: linear/quadratic/product: 0.216, categorical: 0.250, threshold: 1.580, hinge: 0.500
+42 samples
+Density: max memory 3817865216, total allocated 921174016, free 146626216, used 774547800, increment 13810256
+linearPredictor: max memory 3817865216, total allocated 921174016, free 146626216, used 774547800, increment 0
 Deactivating (ForCoverNULL=6.0)
-FeaturedSpace: max memory 3817865216, total allocated 1171783680, free 779100880, used 392682800, increment 0
-Sequential: max memory 3817865216, total allocated 1171783680, free 779100880, used 392682800, increment 0
-Initial loss: 9.215825302206753
-Time since start: 52.282
-500: time = 12.391000 loss = 6.277715
+FeaturedSpace: max memory 3817865216, total allocated 921174016, free 146626216, used 774547800, increment 0
+Sequential: max memory 3817865216, total allocated 921174016, free 146626216, used 774547800, increment 0
+Initial loss: 9.21453157659465
+Initial test loss: 9.21453157659465
+Time since start: 50.409
+500: time = 12.519000 loss = 6.295913 testLoss 6.120231
 Jackknife: leave BioFinal_12 out
 Making features
-makeFeatures: max memory 3817865216, total allocated 894959616, free 231104832, used 663854784, increment 271171984
+makeFeatures: max memory 3817865216, total allocated 635961344, free 127298472, used 508662872, increment -265884928
 Neomorphus_radiolosus BioFinal_12: 
-Regularization values: linear/quadratic/product: 0.179, categorical: 0.250, threshold: 1.450, hinge: 0.500
-55 samples
-Density: max memory 3817865216, total allocated 894959616, free 217408848, used 677550768, increment 13695984
-linearPredictor: max memory 3817865216, total allocated 894959616, free 217408848, used 677550768, increment 0
+Regularization values: linear/quadratic/product: 0.216, categorical: 0.250, threshold: 1.580, hinge: 0.500
+42 samples
+Density: max memory 3817865216, total allocated 635961344, free 118300024, used 517661320, increment 8998448
+linearPredictor: max memory 3817865216, total allocated 635961344, free 118300024, used 517661320, increment 0
 Deactivating (ForCoverNULL=6.0)
-FeaturedSpace: max memory 3817865216, total allocated 894959616, free 217408848, used 677550768, increment 0
-Sequential: max memory 3817865216, total allocated 894959616, free 217408848, used 677550768, increment 0
-Initial loss: 9.215825302206753
-Time since start: 64.763
-500: time = 12.383000 loss = 6.345572
+FeaturedSpace: max memory 3817865216, total allocated 635961344, free 118300024, used 517661320, increment 0
+Sequential: max memory 3817865216, total allocated 635961344, free 118300024, used 517661320, increment 0
+Initial loss: 9.21453157659465
+Initial test loss: 9.21453157659465
+Time since start: 62.807
+500: time = 12.263000 loss = 6.373481 testLoss 6.089377
 Jackknife: leave BioFinal_13 out
 Making features
-makeFeatures: max memory 3817865216, total allocated 599261184, free 422285336, used 176975848, increment -500574920
+makeFeatures: max memory 3817865216, total allocated 310378496, free 73725784, used 236652712, increment -281008608
 Neomorphus_radiolosus BioFinal_13: 
-Regularization values: linear/quadratic/product: 0.179, categorical: 0.250, threshold: 1.450, hinge: 0.500
-55 samples
-Density: max memory 3817865216, total allocated 599261184, free 414224880, used 185036304, increment 8060456
-linearPredictor: max memory 3817865216, total allocated 599261184, free 414224880, used 185036304, increment 0
+Regularization values: linear/quadratic/product: 0.216, categorical: 0.250, threshold: 1.580, hinge: 0.500
+42 samples
+Density: max memory 3817865216, total allocated 310902784, free 244923624, used 65979160, increment -170673552
+linearPredictor: max memory 3817865216, total allocated 310902784, free 244923624, used 65979160, increment 0
 Deactivating (ForCoverNULL=6.0)
-FeaturedSpace: max memory 3817865216, total allocated 599261184, free 414224880, used 185036304, increment 0
-Sequential: max memory 3817865216, total allocated 599261184, free 414224880, used 185036304, increment 0
-Initial loss: 9.215825302206753
-Time since start: 77.257
-500: time = 12.397000 loss = 6.265597
+FeaturedSpace: max memory 3817865216, total allocated 310902784, free 244923624, used 65979160, increment 0
+Sequential: max memory 3817865216, total allocated 310902784, free 244923624, used 65979160, increment 0
+Initial loss: 9.21453157659465
+Initial test loss: 9.21453157659465
+Time since start: 76.374
+500: time = 13.451000 loss = 6.288048 testLoss 6.065161
 Jackknife: leave BioFinal_14 out
 Making features
-makeFeatures: max memory 3817865216, total allocated 289931264, free 63121832, used 226809432, increment 41773128
+makeFeatures: max memory 3817865216, total allocated 360185856, free 171521840, used 188664016, increment 122684856
 Neomorphus_radiolosus BioFinal_14: 
-Regularization values: linear/quadratic/product: 0.179, categorical: 0.250, threshold: 1.450, hinge: 0.500
-55 samples
-Density: max memory 3817865216, total allocated 289931264, free 52929608, used 237001656, increment 10192224
-linearPredictor: max memory 3817865216, total allocated 289931264, free 52929608, used 237001656, increment 0
+Regularization values: linear/quadratic/product: 0.216, categorical: 0.250, threshold: 1.580, hinge: 0.500
+42 samples
+Density: max memory 3817865216, total allocated 360185856, free 158058024, used 202127832, increment 13463816
+linearPredictor: max memory 3817865216, total allocated 360185856, free 158058024, used 202127832, increment 0
 Deactivating (ForCoverNULL=6.0)
-FeaturedSpace: max memory 3817865216, total allocated 289931264, free 52929608, used 237001656, increment 0
-Sequential: max memory 3817865216, total allocated 289931264, free 52929608, used 237001656, increment 0
-Initial loss: 9.215825302206753
-Time since start: 89.734
-500: time = 12.380000 loss = 6.252775
+FeaturedSpace: max memory 3817865216, total allocated 360185856, free 158058024, used 202127832, increment 0
+Sequential: max memory 3817865216, total allocated 360185856, free 158058024, used 202127832, increment 0
+Initial loss: 9.21453157659465
+Initial test loss: 9.21453157659465
+Time since start: 89.044
+500: time = 12.530000 loss = 6.282922 testLoss 6.071675
 Jackknife: leave BioFinal_15 out
 Making features
-makeFeatures: max memory 3817865216, total allocated 330301440, free 163529352, used 166772088, increment -70229568
+makeFeatures: max memory 3817865216, total allocated 387448832, free 126583520, used 260865312, increment 58737480
 Neomorphus_radiolosus BioFinal_15: 
-Regularization values: linear/quadratic/product: 0.179, categorical: 0.250, threshold: 1.450, hinge: 0.500
-55 samples
-Density: max memory 3817865216, total allocated 330301440, free 151404408, used 178897032, increment 12124944
-linearPredictor: max memory 3817865216, total allocated 330301440, free 151404408, used 178897032, increment 0
+Regularization values: linear/quadratic/product: 0.216, categorical: 0.250, threshold: 1.580, hinge: 0.500
+42 samples
+Density: max memory 3817865216, total allocated 387448832, free 116731640, used 270717192, increment 9851880
+linearPredictor: max memory 3817865216, total allocated 387448832, free 116731640, used 270717192, increment 0
 Deactivating (ForCoverNULL=6.0)
-FeaturedSpace: max memory 3817865216, total allocated 330301440, free 151404408, used 178897032, increment 0
-Sequential: max memory 3817865216, total allocated 330301440, free 151404408, used 178897032, increment 0
-Initial loss: 9.215825302206753
-Time since start: 103.001
-500: time = 13.175000 loss = 6.256889
+FeaturedSpace: max memory 3817865216, total allocated 387448832, free 116731640, used 270717192, increment 0
+Sequential: max memory 3817865216, total allocated 387448832, free 116731640, used 270717192, increment 0
+Initial loss: 9.21453157659465
+Initial test loss: 9.21453157659465
+Time since start: 102.54
+500: time = 13.381000 loss = 6.284470 testLoss 6.065091
 Jackknife: leave BioFinal_4 out
 Making features
-makeFeatures: max memory 3817865216, total allocated 367525888, free 93677592, used 273848296, increment 94951264
+makeFeatures: max memory 3817865216, total allocated 757071872, free 583141280, used 173930592, increment -96786600
 Neomorphus_radiolosus BioFinal_4: 
-Regularization values: linear/quadratic/product: 0.179, categorical: 0.250, threshold: 1.450, hinge: 0.500
-55 samples
-Density: max memory 3817865216, total allocated 354942976, free 295308080, used 59634896, increment -214213400
-linearPredictor: max memory 3817865216, total allocated 354942976, free 295308080, used 59634896, increment 0
+Regularization values: linear/quadratic/product: 0.216, categorical: 0.250, threshold: 1.580, hinge: 0.500
+42 samples
+Density: max memory 3817865216, total allocated 757071872, free 583141280, used 173930592, increment 0
+linearPredictor: max memory 3817865216, total allocated 757071872, free 583141280, used 173930592, increment 0
 Deactivating (ForCoverNULL=6.0)
-FeaturedSpace: max memory 3817865216, total allocated 354942976, free 295308080, used 59634896, increment 0
-Sequential: max memory 3817865216, total allocated 354942976, free 295308080, used 59634896, increment 0
-Initial loss: 9.215825302206753
-Time since start: 115.042
-500: time = 11.945000 loss = 6.387559
+FeaturedSpace: max memory 3817865216, total allocated 757071872, free 583141280, used 173930592, increment 0
+Sequential: max memory 3817865216, total allocated 757071872, free 583141280, used 173930592, increment 0
+Initial loss: 9.21453157659465
+Initial test loss: 9.21453157659465
+Time since start: 115.157
+500: time = 12.489000 loss = 6.389243 testLoss 6.348611
 Jackknife: leave BioFinal_6 out
 Making features
-makeFeatures: max memory 3817865216, total allocated 292028416, free 176136800, used 115891616, increment 56256720
+makeFeatures: max memory 3817865216, total allocated 990380032, free 618345296, used 372034736, increment 198104144
 Neomorphus_radiolosus BioFinal_6: 
-Regularization values: linear/quadratic/product: 0.179, categorical: 0.250, threshold: 1.450, hinge: 0.500
-55 samples
-Density: max memory 3817865216, total allocated 292028416, free 167181872, used 124846544, increment 8954928
-linearPredictor: max memory 3817865216, total allocated 292028416, free 167101416, used 124927000, increment 80456
+Regularization values: linear/quadratic/product: 0.216, categorical: 0.250, threshold: 1.580, hinge: 0.500
+42 samples
+Density: max memory 3817865216, total allocated 990380032, free 601257928, used 389122104, increment 17087368
+linearPredictor: max memory 3817865216, total allocated 990380032, free 601257928, used 389122104, increment 0
 Deactivating (ForCoverNULL=6.0)
-FeaturedSpace: max memory 3817865216, total allocated 292028416, free 167101416, used 124927000, increment 0
-Sequential: max memory 3817865216, total allocated 292028416, free 167101416, used 124927000, increment 0
-Initial loss: 9.215825302206753
-Time since start: 127.248
-500: time = 12.112000 loss = 6.424512
+FeaturedSpace: max memory 3817865216, total allocated 990380032, free 601257928, used 389122104, increment 0
+Sequential: max memory 3817865216, total allocated 990380032, free 601257928, used 389122104, increment 0
+Initial loss: 9.21453157659465
+Initial test loss: 9.21453157659465
+Time since start: 127.542
+500: time = 12.272000 loss = 6.474168 testLoss 6.192160
 Jackknife: leave DEMFINAL out
 Making features
-makeFeatures: max memory 3817865216, total allocated 385351680, free 77831024, used 307520656, increment 182593656
+makeFeatures: max memory 3817865216, total allocated 785383424, free 614519376, used 170864048, increment -218258056
 Neomorphus_radiolosus DEMFINAL: 
-Regularization values: linear/quadratic/product: 0.179, categorical: 0.250, threshold: 1.450, hinge: 0.500
-55 samples
-Density: max memory 3817865216, total allocated 385351680, free 68655008, used 316696672, increment 9176016
-linearPredictor: max memory 3817865216, total allocated 385351680, free 68655008, used 316696672, increment 0
+Regularization values: linear/quadratic/product: 0.216, categorical: 0.250, threshold: 1.580, hinge: 0.500
+42 samples
+Density: max memory 3817865216, total allocated 785383424, free 614232392, used 171151032, increment 286984
+linearPredictor: max memory 3817865216, total allocated 785383424, free 614232392, used 171151032, increment 0
 Deactivating (ForCoverNULL=6.0)
-FeaturedSpace: max memory 3817865216, total allocated 385351680, free 68655008, used 316696672, increment 0
-Sequential: max memory 3817865216, total allocated 385351680, free 68655008, used 316696672, increment 0
-Initial loss: 9.215825302206753
-Time since start: 141.44
-500: time = 14.101000 loss = 6.344430
+FeaturedSpace: max memory 3817865216, total allocated 785383424, free 614232392, used 171151032, increment 0
+Sequential: max memory 3817865216, total allocated 785383424, free 614232392, used 171151032, increment 0
+Initial loss: 9.21453157659465
+Initial test loss: 9.21453157659465
+Time since start: 141.093
+500: time = 13.438000 loss = 6.390460 testLoss 5.986598
 Jackknife: leave ForCoverNULL out
 Making features
-makeFeatures: max memory 3817865216, total allocated 656932864, free 546338000, used 110594864, increment -206101808
+makeFeatures: max memory 3817865216, total allocated 495452160, free 194687992, used 300764168, increment 129613136
 Neomorphus_radiolosus ForCoverNULL: 
-Regularization values: linear/quadratic/product: 0.179, categorical: 0.250, threshold: 1.450, hinge: 0.500
-55 samples
-Density: max memory 3817865216, total allocated 656932864, free 536569864, used 120363000, increment 9768136
-linearPredictor: max memory 3817865216, total allocated 656932864, free 536569864, used 120363000, increment 0
-FeaturedSpace: max memory 3817865216, total allocated 656932864, free 536569864, used 120363000, increment 0
-Sequential: max memory 3817865216, total allocated 656932864, free 536569864, used 120363000, increment 0
-Initial loss: 9.215825302206753
-Time since start: 155.689
-500: time = 14.138000 loss = 6.250566
+Regularization values: linear/quadratic/product: 0.216, categorical: 0.250, threshold: 1.580, hinge: 0.500
+42 samples
+Density: max memory 3817865216, total allocated 495452160, free 187664152, used 307788008, increment 7023840
+linearPredictor: max memory 3817865216, total allocated 495452160, free 187664152, used 307788008, increment 0
+FeaturedSpace: max memory 3817865216, total allocated 495452160, free 187664152, used 307788008, increment 0
+Sequential: max memory 3817865216, total allocated 495452160, free 187664152, used 307788008, increment 0
+Initial loss: 9.21453157659465
+Initial test loss: 9.21453157659465
+Time since start: 155.171
+500: time = 13.952000 loss = 6.280445 testLoss 6.060748
 Jackknife: only BioFinal_1
 Making features
-makeFeatures: max memory 3817865216, total allocated 391118848, free 133194608, used 257924240, increment 137561240
+makeFeatures: max memory 3817865216, total allocated 384303104, free 111802536, used 272500568, increment -35287440
 Neomorphus_radiolosus BioFinal_1: 
-Regularization values: linear/quadratic/product: 0.179, categorical: 0.250, threshold: 1.450, hinge: 0.500
-55 samples
-Density: max memory 3817865216, total allocated 391118848, free 128466280, used 262652568, increment 4728328
-linearPredictor: max memory 3817865216, total allocated 391118848, free 128466280, used 262652568, increment 0
-FeaturedSpace: max memory 3817865216, total allocated 391118848, free 128466280, used 262652568, increment 0
-Sequential: max memory 3817865216, total allocated 391118848, free 128466280, used 262652568, increment 0
-Initial loss: 9.215825302206753
-Time since start: 157.924
-440: time = 2.219000 loss = 7.930584
-Res.gain: 1.2852417583870164
+Regularization values: linear/quadratic/product: 0.216, categorical: 0.250, threshold: 1.580, hinge: 0.500
+42 samples
+Density: max memory 3817865216, total allocated 384303104, free 111557504, used 272745600, increment 245032
+linearPredictor: max memory 3817865216, total allocated 384303104, free 111557504, used 272745600, increment 0
+FeaturedSpace: max memory 3817865216, total allocated 384303104, free 111557504, used 272745600, increment 0
+Sequential: max memory 3817865216, total allocated 384303104, free 111557504, used 272745600, increment 0
+Initial loss: 9.21453157659465
+Initial test loss: 9.21453157659465
+Time since start: 156.724
+300: time = 1.515000 loss = 7.910373 testLoss 7.987209
+Res.gain: 1.3041585753798435
 Jackknife: only BioFinal_12
 Making features
-makeFeatures: max memory 3817865216, total allocated 360710144, free 213536424, used 147173720, increment -115478848
+makeFeatures: max memory 3817865216, total allocated 361234432, free 165053112, used 196181320, increment -76564280
 Neomorphus_radiolosus BioFinal_12: 
-Regularization values: linear/quadratic/product: 0.179, categorical: 0.250, threshold: 1.450, hinge: 0.500
-55 samples
-Density: max memory 3817865216, total allocated 360710144, free 213393368, used 147316776, increment 143056
-linearPredictor: max memory 3817865216, total allocated 360710144, free 213393368, used 147316776, increment 0
-FeaturedSpace: max memory 3817865216, total allocated 360710144, free 213393368, used 147316776, increment 0
-Sequential: max memory 3817865216, total allocated 360710144, free 213393368, used 147316776, increment 0
-Initial loss: 9.215825302206753
-Time since start: 160.681
-440: time = 2.744000 loss = 7.971300
-Res.gain: 1.244525411463301
+Regularization values: linear/quadratic/product: 0.216, categorical: 0.250, threshold: 1.580, hinge: 0.500
+42 samples
+Density: max memory 3817865216, total allocated 361234432, free 160538888, used 200695544, increment 4514224
+linearPredictor: max memory 3817865216, total allocated 361234432, free 160538888, used 200695544, increment 0
+FeaturedSpace: max memory 3817865216, total allocated 361234432, free 160538888, used 200695544, increment 0
+Sequential: max memory 3817865216, total allocated 361234432, free 160538888, used 200695544, increment 0
+Initial loss: 9.21453157659465
+Initial test loss: 9.21453157659465
+Time since start: 159.197
+420: time = 2.453000 loss = 8.066081 testLoss 7.664556
+Res.gain: 1.1484503444025407
 Jackknife: only BioFinal_13
 Making features
-makeFeatures: max memory 3817865216, total allocated 334495744, free 102272808, used 232222936, increment 84906160
+makeFeatures: max memory 3817865216, total allocated 331350016, free 31083216, used 300266800, increment 99571256
 Neomorphus_radiolosus BioFinal_13: 
-Regularization values: linear/quadratic/product: 0.179, categorical: 0.250, threshold: 1.450, hinge: 0.500
-55 samples
-Density: max memory 3817865216, total allocated 334495744, free 98974112, used 235521632, increment 3298696
-linearPredictor: max memory 3817865216, total allocated 334495744, free 98974112, used 235521632, increment 0
-FeaturedSpace: max memory 3817865216, total allocated 334495744, free 98974112, used 235521632, increment 0
-Sequential: max memory 3817865216, total allocated 334495744, free 98974112, used 235521632, increment 0
-Initial loss: 9.215825302206753
-60: time = 0.431000 loss = 8.945343
-Res.gain: 0.27048228077672576
+Regularization values: linear/quadratic/product: 0.216, categorical: 0.250, threshold: 1.580, hinge: 0.500
+42 samples
+Density: max memory 3817865216, total allocated 331350016, free 27114496, used 304235520, increment 3968720
+linearPredictor: max memory 3817865216, total allocated 331350016, free 27114496, used 304235520, increment 0
+FeaturedSpace: max memory 3817865216, total allocated 331350016, free 27114496, used 304235520, increment 0
+Sequential: max memory 3817865216, total allocated 331350016, free 27114496, used 304235520, increment 0
+Initial loss: 9.21453157659465
+Initial test loss: 9.21453157659465
+140: time = 0.781000 loss = 8.962425 testLoss 8.933367
+Res.gain: 0.252106600900742
 Jackknife: only BioFinal_14
 Making features
-makeFeatures: max memory 3817865216, total allocated 331874304, free 119157176, used 212717128, increment -22804504
+makeFeatures: max memory 3817865216, total allocated 318242816, free 67003888, used 251238928, increment -52996592
 Neomorphus_radiolosus BioFinal_14: 
-Regularization values: linear/quadratic/product: 0.179, categorical: 0.250, threshold: 1.450, hinge: 0.500
-55 samples
-Density: max memory 3817865216, total allocated 331874304, free 119014120, used 212860184, increment 143056
-linearPredictor: max memory 3817865216, total allocated 331874304, free 119014120, used 212860184, increment 0
-FeaturedSpace: max memory 3817865216, total allocated 331874304, free 119014120, used 212860184, increment 0
-Sequential: max memory 3817865216, total allocated 331874304, free 119014120, used 212860184, increment 0
-Initial loss: 9.215825302206753
-Time since start: 162.094
-160: time = 0.954000 loss = 8.879842
-Res.gain: 0.33598344364922283
+Regularization values: linear/quadratic/product: 0.216, categorical: 0.250, threshold: 1.580, hinge: 0.500
+42 samples
+Density: max memory 3817865216, total allocated 318242816, free 66825056, used 251417760, increment 178832
+linearPredictor: max memory 3817865216, total allocated 318242816, free 66825056, used 251417760, increment 0
+FeaturedSpace: max memory 3817865216, total allocated 318242816, free 66825056, used 251417760, increment 0
+Sequential: max memory 3817865216, total allocated 318242816, free 66825056, used 251417760, increment 0
+Initial loss: 9.21453157659465
+Initial test loss: 9.21453157659465
+Time since start: 161.076
+180: time = 1.056000 loss = 8.874739 testLoss 8.907316
+Res.gain: 0.3397925501761705
 Jackknife: only BioFinal_15
 Making features
-makeFeatures: max memory 3817865216, total allocated 320864256, free 50124640, used 270739616, increment 57879432
+makeFeatures: max memory 3817865216, total allocated 300417024, free 142643536, used 157773488, increment -93644272
 Neomorphus_radiolosus BioFinal_15: 
-Regularization values: linear/quadratic/product: 0.179, categorical: 0.250, threshold: 1.450, hinge: 0.500
-55 samples
-Density: max memory 3817865216, total allocated 320864256, free 49945808, used 270918448, increment 178832
-linearPredictor: max memory 3817865216, total allocated 320864256, free 47063688, used 273800568, increment 2882120
-FeaturedSpace: max memory 3817865216, total allocated 320864256, free 47063688, used 273800568, increment 0
-Sequential: max memory 3817865216, total allocated 320864256, free 47063688, used 273800568, increment 0
-Initial loss: 9.215825302206753
-Time since start: 163.381
-360: time = 1.274000 loss = 7.848999
-Res.gain: 1.3668267154563436
+Regularization values: linear/quadratic/product: 0.216, categorical: 0.250, threshold: 1.580, hinge: 0.500
+42 samples
+Density: max memory 3817865216, total allocated 300417024, free 142498416, used 157918608, increment 145120
+linearPredictor: max memory 3817865216, total allocated 300417024, free 142498416, used 157918608, increment 0
+FeaturedSpace: max memory 3817865216, total allocated 300417024, free 142498416, used 157918608, increment 0
+Sequential: max memory 3817865216, total allocated 300417024, free 142498416, used 157918608, increment 0
+Initial loss: 9.21453157659465
+Initial test loss: 9.21453157659465
+Time since start: 162.136
+300: time = 1.042000 loss = 7.849462 testLoss 7.828351
+Res.gain: 1.3650695248137197
 Jackknife: only BioFinal_4
 Making features
-makeFeatures: max memory 3817865216, total allocated 312475648, free 83357608, used 229118040, increment -44682528
+makeFeatures: max memory 3817865216, total allocated 290979840, free 118273928, used 172705912, increment 14787304
 Neomorphus_radiolosus BioFinal_4: 
-Regularization values: linear/quadratic/product: 0.179, categorical: 0.250, threshold: 1.450, hinge: 0.500
-55 samples
-Density: max memory 3817865216, total allocated 312475648, free 80379784, used 232095864, increment 2977824
-linearPredictor: max memory 3817865216, total allocated 312475648, free 80379784, used 232095864, increment 0
-FeaturedSpace: max memory 3817865216, total allocated 312475648, free 80379784, used 232095864, increment 0
-Sequential: max memory 3817865216, total allocated 312475648, free 80379784, used 232095864, increment 0
-Initial loss: 9.215825302206753
-140: time = 0.849000 loss = 8.954859
-Res.gain: 0.2609667079613782
+Regularization values: linear/quadratic/product: 0.216, categorical: 0.250, threshold: 1.580, hinge: 0.500
+42 samples
+Density: max memory 3817865216, total allocated 290979840, free 115182104, used 175797736, increment 3091824
+linearPredictor: max memory 3817865216, total allocated 290979840, free 115182104, used 175797736, increment 0
+FeaturedSpace: max memory 3817865216, total allocated 290979840, free 115182104, used 175797736, increment 0
+Sequential: max memory 3817865216, total allocated 290979840, free 115182104, used 175797736, increment 0
+Initial loss: 9.21453157659465
+Initial test loss: 9.21453157659465
+160: time = 0.909000 loss = 9.002765 testLoss 8.817417
+Res.gain: 0.21176703179766854
 Jackknife: only BioFinal_6
 Making features
-makeFeatures: max memory 3817865216, total allocated 301989888, free 34780048, used 267209840, increment 35113976
+makeFeatures: max memory 3817865216, total allocated 268435456, free 141795072, used 126640384, increment -49157352
 Neomorphus_radiolosus BioFinal_6: 
-Regularization values: linear/quadratic/product: 0.179, categorical: 0.250, threshold: 1.450, hinge: 0.500
-55 samples
-Density: max memory 3817865216, total allocated 301989888, free 31587144, used 270402744, increment 3192904
-linearPredictor: max memory 3817865216, total allocated 301989888, free 31587144, used 270402744, increment 0
-FeaturedSpace: max memory 3817865216, total allocated 301989888, free 31587144, used 270402744, increment 0
-Sequential: max memory 3817865216, total allocated 301989888, free 31587144, used 270402744, increment 0
-Initial loss: 9.215825302206753
-Time since start: 165.902
-260: time = 1.645000 loss = 8.808428
-Res.gain: 0.4073971767339355
+Regularization values: linear/quadratic/product: 0.216, categorical: 0.250, threshold: 1.580, hinge: 0.500
+42 samples
+Density: max memory 3817865216, total allocated 268435456, free 141501024, used 126934432, increment 294048
+linearPredictor: max memory 3817865216, total allocated 268435456, free 141501024, used 126934432, increment 0
+FeaturedSpace: max memory 3817865216, total allocated 268435456, free 141501024, used 126934432, increment 0
+Sequential: max memory 3817865216, total allocated 268435456, free 141501024, used 126934432, increment 0
+Initial loss: 9.21453157659465
+Initial test loss: 9.21453157659465
+Time since start: 164.658
+280: time = 1.577000 loss = 8.876191 testLoss 8.563770
+Res.gain: 0.3383408443460052
 Jackknife: only DEMFINAL
 Making features
-makeFeatures: max memory 3817865216, total allocated 329777152, free 97419400, used 232357752, increment -38044992
+makeFeatures: max memory 3817865216, total allocated 250609664, free 128328824, used 122280840, increment -4653592
 Neomorphus_radiolosus DEMFINAL: 
-Regularization values: linear/quadratic/product: 0.179, categorical: 0.250, threshold: 1.450, hinge: 0.500
-55 samples
-Density: max memory 3817865216, total allocated 329777152, free 97123512, used 232653640, increment 295888
-linearPredictor: max memory 3817865216, total allocated 329777152, free 97123512, used 232653640, increment 0
-FeaturedSpace: max memory 3817865216, total allocated 329777152, free 97123512, used 232653640, increment 0
-Sequential: max memory 3817865216, total allocated 329777152, free 97123512, used 232653640, increment 0
-Initial loss: 9.215825302206753
-260: time = 0.706000 loss = 8.229456
-Res.gain: 0.9863690397598681
+Regularization values: linear/quadratic/product: 0.216, categorical: 0.250, threshold: 1.580, hinge: 0.500
+42 samples
+Density: max memory 3817865216, total allocated 250609664, free 128181608, used 122428056, increment 147216
+linearPredictor: max memory 3817865216, total allocated 250609664, free 128181608, used 122428056, increment 0
+FeaturedSpace: max memory 3817865216, total allocated 250609664, free 128181608, used 122428056, increment 0
+Sequential: max memory 3817865216, total allocated 250609664, free 128181608, used 122428056, increment 0
+Initial loss: 9.21453157659465
+Initial test loss: 9.21453157659465
+260: time = 0.682000 loss = 8.066448 testLoss 8.752037
+Res.gain: 1.1480835045479623
 Jackknife: only ForCoverNULL
 Making features
-makeFeatures: max memory 3817865216, total allocated 355467264, free 123501448, used 231965816, increment -687824
+makeFeatures: max memory 3817865216, total allocated 250085376, free 92384192, used 157701184, increment 35273128
 Neomorphus_radiolosus ForCoverNULL: 
-Regularization values: linear/quadratic/product: 0.179, categorical: 0.250, threshold: 1.450, hinge: 0.500
-55 samples
-Density: max memory 3817865216, total allocated 355467264, free 123501448, used 231965816, increment 0
-linearPredictor: max memory 3817865216, total allocated 355467264, free 123501448, used 231965816, increment 0
+Regularization values: linear/quadratic/product: 0.216, categorical: 0.250, threshold: 1.580, hinge: 0.500
+42 samples
+Density: max memory 3817865216, total allocated 250085376, free 92348416, used 157736960, increment 35776
+linearPredictor: max memory 3817865216, total allocated 250085376, free 92205360, used 157880016, increment 143056
 Deactivating (ForCoverNULL=6.0)
-FeaturedSpace: max memory 3817865216, total allocated 355467264, free 123276160, used 232191104, increment 225288
-Sequential: max memory 3817865216, total allocated 355467264, free 123276160, used 232191104, increment 0
-Initial loss: 9.215825302206753
-20: time = 0.001000 loss = 9.215825
+FeaturedSpace: max memory 3817865216, total allocated 250085376, free 92066080, used 158019296, increment 139280
+Sequential: max memory 3817865216, total allocated 250085376, free 92066080, used 158019296, increment 0
+Initial loss: 9.21453157659465
+Initial test loss: 9.21453157659465
+20: time = 0.000000 loss = 9.214532 testLoss 9.214532
 Res.gain: 0.0
 Ending
